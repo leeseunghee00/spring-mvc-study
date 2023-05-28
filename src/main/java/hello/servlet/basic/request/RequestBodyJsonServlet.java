@@ -18,7 +18,7 @@ import java.nio.charset.StandardCharsets;
  * content-type: application/json
  * message body: {"username": "hello", "age": 24}
  */
-@WebServlet(name = "RequestBodyJsonServlet", urlPatterns = "/request-body-json")
+@WebServlet(name = "requestBodyJsonServlet", urlPatterns = "/request-body-json")
 public class RequestBodyJsonServlet extends HttpServlet {
 
     private ObjectMapper objectMapper = new ObjectMapper();
