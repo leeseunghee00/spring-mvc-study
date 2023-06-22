@@ -17,7 +17,7 @@ import java.util.Map;
 @WebServlet(name = "frontControllerServletV4", urlPatterns = "/front-controller/v4/*")
 public class FrontControllerServletV4 extends HttpServlet {
 
-    // 어떤 요청이 들어오면 ControllerV3 을 호출한다.
+    // 어떤 요청이 들어오면 ControllerV4 을 호출한다.
     private final Map<String, ControllerV4> controllerMap = new HashMap<>();
 
     public FrontControllerServletV4() {
