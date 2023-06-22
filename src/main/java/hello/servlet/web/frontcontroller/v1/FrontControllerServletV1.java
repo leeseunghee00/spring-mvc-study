@@ -17,7 +17,7 @@ import java.util.Map;
 public class FrontControllerServletV1 extends HttpServlet {
 
     // 어떤 요청이 들어오면 ControllerV1 을 호출한다.
-    private Map<String, ControllerV1> controllerMap = new HashMap<>();
+    private final Map<String, ControllerV1> controllerMap = new HashMap<>();
 
     public FrontControllerServletV1() {
         // 해당 패턴이 들어오면 그에 따른 ControllerV1을 매핑(실행)한다.
